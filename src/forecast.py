@@ -74,7 +74,7 @@ def runDSSAT(dbname, options):
     res = float(options['forecast']['resolution'])
     nens = int(options['dssat']['ensemble size'])
     name = options['forecast']['name'].lower()
-    dssatexe = "{0}/DSSAT_Ex.exe".format(rpath.bins)
+    dssatexe = "{0}/ENKF_FRMWRK.exe".format(rpath.bins)
     if 'shapefile' in options['dssat']:
         shapefile = options['dssat']['shapefile']
     else:
